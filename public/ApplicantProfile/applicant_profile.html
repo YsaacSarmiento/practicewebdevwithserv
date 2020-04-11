@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your profile</title>
+        <link rel = "stylesheet" type = "text/css" href = "./applicant_profile.css">
+        <link rel = "stylesheet" type = "text/css" href = "./edit_modal.css">
+        <link rel = "stylesheet" type = "text/css" href = "./alert.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+
+    </head>
+    <body>
+        <!-- <header> -->
+            
+        <!-- </header> -->
+        <!-- <main> -->
+            <div class = "two_div">
+                <div class = "navbar">
+                    <h2>JobFinder</h2>
+                    <div class = "navigation">
+                        <a href = "../ApplicantHome/applicant_home.html" class = "navbar_item">Browse</a> 
+                        <a href = "#" class = "active">Profile</a>
+                    </div>
+                    <a href = "../index.html" id = "log_out">Log out</a>
+                </div>
+
+
+                <div class = "main_div">
+                    <div class = "avatar">
+                        <div class = name_logo>
+                            <span class = "logo_anim">
+                                <p class = "initials_anim"></p>
+                            </span>
+                        </div>
+                        <div class = "avatar_options">
+                            <h1></h1>
+                            <div class = "profile_settings">
+                                <button type = "button" class = "edit_button">Edit profile</button>
+                                <div class = "settings_div">
+                                    <span class="material-icons settings_button">more_horiz</span>
+                                    <div class = "dropdown_menu">
+                                        <p class = "delete_profile">Delete Profile</p>
+                                    </div>
+                                </div>
+                      
+                            </div>
+                           
+
+
+                        </div>
+                    </div>
+                    <div class = "card_div">
+                        <div class = "profile_card profile_anim">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class = "edit_modal close_editor">
+                <div class = "edit_box editor_anim_open">
+                    <div class = "edit_header">
+                        <div class = "edit_title">
+                            <span class="material-icons close_button">close</span>
+                            <h2>Edit Profile</h2>
+                        </div>
+                        <div class = "edit_option">
+                            <span class="material-icons add_button" id = "inactive_add_btn">add</span>
+                            <span class="material-icons save_button">save</span>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class = "alert_message no_message fail message_disappear">
+                <span class = "material-icons status_icon fail_check">error_outline</span>
+                <p class = "message_text"></p>
+            </div>
+
+            
+        <!-- </main> -->
+        
+    </body>
+    <script type = "text/javascript" src = "./applicant_profile.js"></script>
+</html>

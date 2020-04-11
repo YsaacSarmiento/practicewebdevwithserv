@@ -1,0 +1,108 @@
+body{
+    /* background: linear-gradient(to right, #1E88E5, white); */
+    background-color: rgb(235, 239, 243);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    border-radius: 5px;
+    padding: 1em 4em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+p{
+    color: #888888;
+}
+
+#three_card{
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+
+#top_card{
+    padding:7vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 4px 4px #dddddd;
+}
+
+#top_card h1{
+    font-size: 4em;
+}
+
+#buttons{
+    margin-top: 2em;
+}
+
+#login{
+    margin-right: 4em;
+    color: #1E88E5;
+    background-color: white;
+    border: 1px solid #1E88E5;
+}
+
+#login:hover{
+    background-color: rgba(144, 202, 249, 0.3);
+}
+
+#sign_up{
+    box-shadow: 0px 4px 4px #dddddd;
+    background-color: #1E88E5;
+    border: none;
+    color: white;
+}
+
+#sign_up:hover{
+    background-color: #005cb2;
+}
+
+#middle_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#middle_card h2{
+    margin-top: 2em;
+}
+
+#expectations_list{
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#expect_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#expect_card img{
+    width: 100%;
+    max-width: 300px;
+    padding: 2em;
+    height: auto;
+}
+
+#bottom_card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6em;
+    align-items: center;
+    /* background-color: #1E88E5; */
+    background-color: #1E88E5;
+    color: white;
+    box-shadow: 0px -4px 4px #dddddd;
+    padding: 1.2em;
+}
+

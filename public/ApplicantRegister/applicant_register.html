@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your account</title>
+    <link rel = "stylesheet" type = "text/css" href = "./applicant_register.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id = "card">
+        <div id = "info_text">
+            <h2>Create your account</h2>
+            <p>Just fill out the information needed</p>
+            <img src = "../assets/profile.svg" alt = "Create account">
+            <p>Already registered? <a href = "../Login/login.html">Log in here</a></p>
+        </div>
+
+        <div id = "form_card">
+            <form action = "/applicant_register" id = "form_contents" method = "POST">
+                <label for="name" id="title">Name</label>
+                
+                <input type="text" required name = "given_name">
+                <label for="name" id="placeholder">Given Name</label>
+                <input type="text" required  name = "middle_name">
+                <label for="name" id="placeholder">Middle Name</label>
+                <input type="text" required  name = "last_name">
+                <label for="name" id="placeholder">Last Name</label>
+
+                <label for="creds" id="title">Credentials</label>
+
+                <input type="text" required name = "username">
+                <label for="creds" id="placeholder">Username</label>
+                <input type="password" required name = "pw">
+                <label for="creds" id="placeholder">Password</label>
+
+                <label for="haddress" id="title">Home Address</label>
+
+                <input type="text" required name = "address">
+                <label for="haddress" id="placeholder">Home Address</label>
+
+                <label for="bday" id="title">Birthdate</label>
+
+                <input type="date" required name = "bday">
+                <label for="bday" id = "bday_placeholder">Date of Birthday</label>
+
+                <label for="sex" id = "title">Sex</label>
+
+                <div id = "sex_control">
+                    <label class = "radio">
+                        <input type = "radio" name = "sex" value = "Male" required>Male
+                        <span></span>
+                    </label>
+
+                    <label class = "radio">
+                        <input type = "radio" name = "sex" value = "Female" required>Female
+                        <span></span>
+                    </label>
+                </div>
+
+                <label for="civil" id = "title">Civil Status</label>
+                
+                <select class = "civil_status" required name = "civil_status">
+                    <option value = "">Select Civil status</option>
+                    <option value = "Single">Single</option>
+                    <option value = "Married">Married</option>
+                    <option value = "Widow">Widow</option>
+                    <option value = "Widower">Widower</option>
+                </select>
+
+
+                <label for="contact" id="title">Contact Information</label>
+
+                <input type="text" required name = "email">
+                <label for="contact" id="placeholder">Email Address</label>
+                <input type="text" required name = "number">
+                <label for="contact" id="placeholder">Contact Number</label>
+                
+                <label for="app_type" id="title">Are you a</label>
+                <div id = "applicant_type">
+                    
+                    <label class = "check">
+                        <input type = "checkbox"  value = "Student" class = "student">Student
+                        <span></span>
+                    </label>
+
+                    <label class = "check">
+                        <input type = "checkbox" value = "College Graduate" class = "college">College Graduate
+                        <span></span>
+                    </label>
+
+
+                    <label class = "check">
+                        <input type = "checkbox" value = "With Job Experience" class = "job">With Job Experience
+                        <span></span>
+                    </label>
+                
+                </div>
+
+                <div id = "student_div">
+                    <label for="student" id = "title">Student</label>
+                    <select class = "selection" name = "education">
+                        <option value = "">Select highest educational attainment</option>
+                        <option value = "Elementary">Elementary</option>
+                        <option value = "Junior High School">Junior High School</option>
+                        <option value = "Senior High School">Senior High School</option>
+                    </select>
+                    <input type="text" name = "current_school">
+                    <label for="contact" id="placeholder">Current school</label>
+                </div>
+
+                <div id = "grad_div">
+                    <div id = "college_label">
+                        <label for="grad" id = "title">College Graduate</label>
+                        <span class="material-icons md-10" id = "college_add">add_circle_outline</span>
+                    </div>
+                    <input type="text"  name = "degree">
+                    <label for="college" id="placeholder">Degree attained</label>
+                    <input type="text"  name = "grad_school">
+                    <label for="college" id="placeholder">School graduated from</label>
+                    <input type="text" name = "grad_year">
+                    <label for="college" id="placeholder">Graduation year</label>
+                </div>
+                
+                <div id = "job_div">
+                    <div id = "job_label">
+                        <label for="grad" id = "title">Job Experience</label>
+                        <span class="material-icons md-10" id = "job_add">add_circle_outline</span>
+                    </div>
+                    <input type="text"  name = "company">
+                    <label for="college" id="placeholder">Company</label>
+                    <input type="text" name = "position">
+                    <label for="college" id="placeholder">Position held</label>
+                    <input type="text"  name = "years_worked">
+                    <label for="college" id="placeholder">Years worked</label>
+                </div>
+
+                <button type = "submit" class = "register_btn">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script type = "text/javascript" src="./applicant_register.js"></script>
+</html>

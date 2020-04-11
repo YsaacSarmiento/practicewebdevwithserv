@@ -1,0 +1,113 @@
+.card{
+    transition: 0.5s;
+    display:flex;
+    border-radius: 5px;
+    margin:1em 0px 1em 0px;
+    background-color: white;
+    width: 55%;
+    border: 1px solid #d4d4d4;
+
+}
+
+.card:hover{
+    box-shadow: 0px 1px 4px #888888;
+}
+
+.company_logo{
+    margin: 2% 3%;
+    display: flex;
+}
+
+.company_logo p{
+    margin: 12px 28px 0px 28px;
+    color: #1E88E5;
+}
+
+.company_logo span{
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    background-color: rgba(144, 202, 249, 0.3);
+    border-radius: 50%;
+}
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#title{
+    font-size: 1.3em;
+    font-weight: 900;
+    line-height: 0.8em;
+    color:black;
+}
+
+
+.card_details{
+    display: flex;
+    line-height:1em;
+    color: #888888;
+    word-break: break-all;
+}
+
+.card_details p{
+    margin-right: 2em;
+}
+
+.additional_details{
+    word-break: break-all;
+    color: #888888;
+}
+
+.inactive_details{
+    display: none;
+}
+
+
+.job_options button{
+    margin-right: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    transition: 0.5s;
+}
+
+.apply_button, .view_button, .applied, .cancel{
+    color: white;
+    background-color: #1E88E5;
+    font-weight: 900;
+    padding: 0.5em 1em;
+    box-shadow: 0px 1px 4px #d4d4d4;
+}
+
+
+.apply_button:hover, .view_button:hover{
+    background-color: #005cb2;
+}
+
+.learn_button{
+    padding: 0;
+    background-color: white;
+    color: #1E88E5;
+}
+
+.applied{
+    background-color: rgba(144, 202, 249, 0.3);
+    color: #1E88E5;
+}
+
+.material-icons.md-18{
+    font-size: 1em;
+    position: relative;
+    top: 2px;
+    right:5px;
+}
+
+.cancel{
+    background-color: rgba(255, 138, 128,0.3);
+    color: #FF5252;
+}

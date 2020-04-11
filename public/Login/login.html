@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel = "stylesheet" type = "text/css" href = "./login.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id = "login_card">
+        <img src = "../assets/male.svg" alt = "avatar">
+        <h2>Welcome back!</h2>
+        <p>Log in to continue</p>
+        <div id = "credentials_card">
+            <form action = "/home" id = "credentials" method = "POST">
+                <input type = "text" required id = "username" name = "userName"/>
+                <label for="text">Username</label>
+                <input type = "password" required id = "pw" name = "passWord"/>
+                <label for = "password">Password</label>
+                <button type = "submit" id = "login">Log in</button>
+                <!-- change to type = "submit" when we are actually validating it -->
+            </form>
+        </div>
+        <p id = "register_txt">Don't have an account? <a href = "../Register/register.html">Register now</a></p>
+
+    </div>
+</body>
+<script type = "text/javascript" src = "./login.js"></script>
+</html>

@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(235, 239, 243);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#login_card{
+    margin: 2em 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 0;
+}
+
+#login_card img{
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+#credentials{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0px 4px 4px #dddddd;
+    align-items: center;
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    
+}
+
+#credentials input{
+    margin: 1em;
+    border: none;
+    border:1px solid #d1d1d1;
+    color: #888888;
+    padding: 0.8em;
+    padding-top:1em;
+    padding-left: 5px;
+    border-radius:5px;
+    /* padding-bottom: 2px; */
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+
+#credentials input:focus + label{
+    color: #1E88E5;
+    font-size: 0.7em;
+    top: -6em;
+    right:8em;
+}
+
+#credentials input:focus{
+    border: none;
+    border-bottom: 1px solid #1E88E5;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: rgba(144, 202, 249, 0.3);
+}
+
+
+#credentials input:hover + label{
+    color: #1E88E5;
+}
+
+#credentials input:hover{
+    border: 1px solid #1E88E5;
+}
+
+#credentials input:valid + label{
+    font-size: 0.7em;
+    top: -6em;
+    right:8em;
+}
+
+
+#credentials label{
+    transition: 0.5s;
+    position: relative;
+    top: -2.8em;
+    right: 5em;
+    color: #888888;
+    font-size: 1em;
+}
+
+/* #credentials label:invalid{
+    color:#FF5252;
+} */
+
+
+#credentials button{
+    margin: 2em;
+    border: none;
+    background-color: #1E88E5;
+    color: white;
+    border-radius: 5px;
+    padding: 0.7em 4em;
+    box-shadow: 0px 4px 4px #dddddd;
+    transition: 0.5s;
+}
+
+#credentials button:hover{
+    background-color: #005cb2;
+}
+
+#register_txt{
+    margin-top: 2em;
+}
+
+a{
+    color: #1E88E5;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover{
+    color: #005cb2;
+}
